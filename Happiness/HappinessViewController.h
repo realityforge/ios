@@ -20,8 +20,9 @@
 }
 
 @property (retain) IBOutlet UISlider *slider;
-
 @property (retain) IBOutlet FaceView *faceView;
+
+@property (nonatomic) int happiness;
 
 -(IBAction) happinessChanged:(UISlider *)ignored;
 
