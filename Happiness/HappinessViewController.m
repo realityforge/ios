@@ -29,9 +29,17 @@
   return (happiness - 50) / 50.0;
 }
 
+// Must be called during deallocation or unloading to release outlets
+- (void)releaseOutlets
+{
+  self.faceView = nil;
+  self.slider = nil;
+}
+
 - (void)dealloc
 {
-    [super dealloc];
+  [self releaseOutlets];
+  [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,9 +61,8 @@
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [self releaseOutlets];
+  [super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
