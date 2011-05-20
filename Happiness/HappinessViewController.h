@@ -7,9 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FaceView.h"
 
-@interface HappinessViewController : UIViewController {
-    
+@interface HappinessViewController : UIViewController <FaceViewDelegate> {
+  
+  // 0 (sad) to 100 (happy)
+  int happiness;   
+  
+  UISlider *slider;
+  FaceView *faceView;
+  
 }
+
+@property (retain) IBOutlet UISlider *slider;
+
+@property (retain) IBOutlet FaceView *faceView;
+
+-(IBAction) happinessChanged:(UISlider *)ignored;
 
 @end

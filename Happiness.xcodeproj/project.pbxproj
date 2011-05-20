@@ -22,6 +22,7 @@
 		D0A5ADE3138614B100D8E049 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0A5ADE1138614B100D8E049 /* InfoPlist.strings */; };
 		D0A5ADE6138614B100D8E049 /* HappinessTests.h in Resources */ = {isa = PBXBuildFile; fileRef = D0A5ADE5138614B100D8E049 /* HappinessTests.h */; };
 		D0A5ADE8138614B100D8E049 /* HappinessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5ADE7138614B100D8E049 /* HappinessTests.m */; };
+		D0A5ADF31386156300D8E049 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5ADF21386156300D8E049 /* FaceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +40,24 @@
 		D0A5ADB8138614B100D8E049 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0A5ADBA138614B100D8E049 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0A5ADBC138614B100D8E049 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D0A5ADC0138614B100D8E049 /* Happiness-Info.plist */ = {isa = PBXFileReference; path = "Happiness-Info.plist"; sourceTree = "<group>"; };
+		D0A5ADC0138614B100D8E049 /* Happiness-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Happiness-Info.plist"; sourceTree = "<group>"; };
 		D0A5ADC2138614B100D8E049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D0A5ADC4138614B100D8E049 /* Happiness-Prefix.pch */ = {isa = PBXFileReference; path = "Happiness-Prefix.pch"; sourceTree = "<group>"; };
+		D0A5ADC4138614B100D8E049 /* Happiness-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Happiness-Prefix.pch"; sourceTree = "<group>"; };
 		D0A5ADC5138614B100D8E049 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D0A5ADC7138614B100D8E049 /* HappinessAppDelegate.h */ = {isa = PBXFileReference; path = HappinessAppDelegate.h; sourceTree = "<group>"; };
+		D0A5ADC7138614B100D8E049 /* HappinessAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HappinessAppDelegate.h; sourceTree = "<group>"; };
 		D0A5ADC8138614B100D8E049 /* HappinessAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappinessAppDelegate.m; sourceTree = "<group>"; };
 		D0A5ADCB138614B100D8E049 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		D0A5ADCD138614B100D8E049 /* HappinessViewController.h */ = {isa = PBXFileReference; path = HappinessViewController.h; sourceTree = "<group>"; };
+		D0A5ADCD138614B100D8E049 /* HappinessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HappinessViewController.h; sourceTree = "<group>"; };
 		D0A5ADCE138614B100D8E049 /* HappinessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappinessViewController.m; sourceTree = "<group>"; };
 		D0A5ADD1138614B100D8E049 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HappinessViewController.xib; sourceTree = "<group>"; };
 		D0A5ADD8138614B100D8E049 /* HappinessTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A5ADE0138614B100D8E049 /* HappinessTests-Info.plist */ = {isa = PBXFileReference; path = "HappinessTests-Info.plist"; sourceTree = "<group>"; };
+		D0A5ADE0138614B100D8E049 /* HappinessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HappinessTests-Info.plist"; sourceTree = "<group>"; };
 		D0A5ADE2138614B100D8E049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D0A5ADE4138614B100D8E049 /* HappinessTests-Prefix.pch */ = {isa = PBXFileReference; path = "HappinessTests-Prefix.pch"; sourceTree = "<group>"; };
+		D0A5ADE4138614B100D8E049 /* HappinessTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HappinessTests-Prefix.pch"; sourceTree = "<group>"; };
 		D0A5ADE5138614B100D8E049 /* HappinessTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HappinessTests.h; sourceTree = "<group>"; };
 		D0A5ADE7138614B100D8E049 /* HappinessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappinessTests.m; sourceTree = "<group>"; };
+		D0A5ADF11386156300D8E049 /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
+		D0A5ADF21386156300D8E049 /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				D0A5ADCE138614B100D8E049 /* HappinessViewController.m */,
 				D0A5ADD0138614B100D8E049 /* HappinessViewController.xib */,
 				D0A5ADBF138614B100D8E049 /* Supporting Files */,
+				D0A5ADF11386156300D8E049 /* FaceView.h */,
+				D0A5ADF21386156300D8E049 /* FaceView.m */,
 			);
 			path = Happiness;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				D0A5ADC6138614B100D8E049 /* main.m in Sources */,
 				D0A5ADC9138614B100D8E049 /* HappinessAppDelegate.m in Sources */,
 				D0A5ADCF138614B100D8E049 /* HappinessViewController.m in Sources */,
+				D0A5ADF31386156300D8E049 /* FaceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

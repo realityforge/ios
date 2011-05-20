@@ -10,6 +10,25 @@
 
 @implementation HappinessViewController
 
+@synthesize slider;
+@synthesize faceView;
+
+- (void)updateHappiness
+{
+  happiness = (int)([slider value] * 100);
+}
+
+-(IBAction) happinessChanged:(UISlider *)ignored
+{
+  [self updateHappiness];
+  [self.faceView setNeedsDisplay];
+}
+
+- (float)smileForFaceView:(FaceView *)requestor
+{
+  return (happiness - 50) / 50.0;
+}
+
 - (void)dealloc
 {
     [super dealloc];
@@ -25,13 +44,12 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  self.faceView.delegate = self;
+  [self updateHappiness];
+  [super viewDidLoad];
 }
-*/
 
 - (void)viewDidUnload
 {
