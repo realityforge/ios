@@ -16,6 +16,8 @@
 - (void)updateHappiness
 {
   happiness = (int)([slider value] * 100);
+  if( happiness < 0 ) happiness = 0;
+  if( happiness > 100 ) happiness = 100;
 }
 
 -(IBAction) happinessChanged:(UISlider *)ignored
