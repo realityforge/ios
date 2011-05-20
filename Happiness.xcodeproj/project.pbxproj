@@ -370,6 +370,7 @@
 				GCC_PREFIX_HEADER = "Happiness/Happiness-Prefix.pch";
 				INFOPLIST_FILE = "Happiness/Happiness-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -383,6 +384,7 @@
 				GCC_PREFIX_HEADER = "Happiness/Happiness-Prefix.pch";
 				INFOPLIST_FILE = "Happiness/Happiness-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -453,6 +455,7 @@
 				D0A5ADED138614B100D8E049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0A5ADEE138614B100D8E049 /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +464,7 @@
 				D0A5ADF0138614B100D8E049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
