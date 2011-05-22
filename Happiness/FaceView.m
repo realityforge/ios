@@ -35,6 +35,15 @@
 - (void)drawFaceAtX:(CGFloat)x Y:(CGFloat)y withRadius:(CGFloat)radius onContext:(CGContextRef)context
 {
   UIGraphicsPushContext(context);
+
+  [[UIColor orangeColor] setFill];
+  CGRect rect;
+  rect.origin.x = 0;
+  rect.origin.y = 0;
+  rect = self.bounds;
+  CGContextAddRect(context, rect);
+  CGContextFillPath(context);
+
   
   [[UIColor yellowColor] setFill];
   CGContextSetLineWidth(context, 4);
