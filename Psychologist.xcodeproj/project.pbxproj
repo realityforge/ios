@@ -17,6 +17,8 @@
 		D0A5AED51388ACB500D8E049 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5AED41388ACB500D8E049 /* FaceView.m */; };
 		D0A5AED81388ACCC00D8E049 /* HappinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5AED71388ACCC00D8E049 /* HappinessViewController.m */; };
 		D0A5AEDA1388ACD600D8E049 /* HappinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A5AED91388ACD600D8E049 /* HappinessViewController.xib */; };
+		D0A5AEDE1388ADCA00D8E049 /* PsychologistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5AEDC1388ADCA00D8E049 /* PsychologistViewController.m */; };
+		D0A5AEDF1388ADCA00D8E049 /* PsychologistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A5AEDD1388ADCA00D8E049 /* PsychologistViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		D0A5AED61388ACCC00D8E049 /* HappinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappinessViewController.h; sourceTree = "<group>"; };
 		D0A5AED71388ACCC00D8E049 /* HappinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappinessViewController.m; sourceTree = "<group>"; };
 		D0A5AED91388ACD600D8E049 /* HappinessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HappinessViewController.xib; sourceTree = "<group>"; };
+		D0A5AEDB1388ADCA00D8E049 /* PsychologistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PsychologistViewController.h; sourceTree = "<group>"; };
+		D0A5AEDC1388ADCA00D8E049 /* PsychologistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PsychologistViewController.m; sourceTree = "<group>"; };
+		D0A5AEDD1388ADCA00D8E049 /* PsychologistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PsychologistViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +91,12 @@
 				D0A5AED61388ACCC00D8E049 /* HappinessViewController.h */,
 				D0A5AED71388ACCC00D8E049 /* HappinessViewController.m */,
 				D0A5AED41388ACB500D8E049 /* FaceView.m */,
+				D0A5AED91388ACD600D8E049 /* HappinessViewController.xib */,
 				D0A5AEC81388ABE300D8E049 /* PsychologistAppDelegate.h */,
 				D0A5AEC91388ABE300D8E049 /* PsychologistAppDelegate.m */,
+				D0A5AEDB1388ADCA00D8E049 /* PsychologistViewController.h */,
+				D0A5AEDC1388ADCA00D8E049 /* PsychologistViewController.m */,
+				D0A5AEDD1388ADCA00D8E049 /* PsychologistViewController.xib */,
 				D0A5AECB1388ABE300D8E049 /* MainWindow.xib */,
 				D0A5AEC01388ABE300D8E049 /* Supporting Files */,
 			);
@@ -97,7 +106,6 @@
 		D0A5AEC01388ABE300D8E049 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0A5AED91388ACD600D8E049 /* HappinessViewController.xib */,
 				D0A5AEC11388ABE300D8E049 /* Psychologist-Info.plist */,
 				D0A5AEC21388ABE300D8E049 /* InfoPlist.strings */,
 				D0A5AEC51388ABE300D8E049 /* Psychologist-Prefix.pch */,
@@ -156,6 +164,7 @@
 				D0A5AEC41388ABE300D8E049 /* InfoPlist.strings in Resources */,
 				D0A5AECD1388ABE300D8E049 /* MainWindow.xib in Resources */,
 				D0A5AEDA1388ACD600D8E049 /* HappinessViewController.xib in Resources */,
+				D0A5AEDF1388ADCA00D8E049 /* PsychologistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +179,7 @@
 				D0A5AECA1388ABE300D8E049 /* PsychologistAppDelegate.m in Sources */,
 				D0A5AED51388ACB500D8E049 /* FaceView.m in Sources */,
 				D0A5AED81388ACCC00D8E049 /* HappinessViewController.m in Sources */,
+				D0A5AEDE1388ADCA00D8E049 /* PsychologistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,5 +13,6 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (retain) UINavigationController *navigator;
 
 @end
