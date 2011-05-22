@@ -57,7 +57,7 @@
 {
   [super viewDidLoad];
   self.faceView.delegate = self;
-  self.happiness = 50;
+  [self updateUIForHappinessChange];
 }
 
 - (void)viewDidUnload
