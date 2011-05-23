@@ -16,6 +16,8 @@
 {
   HappinessViewController* controller = [[HappinessViewController alloc] init];
   controller.happiness = happinessLevel;
+  controller.title = @"Diagnosis";
+
   [self.navigationController pushViewController:controller animated:YES];
   [controller release];
 }
@@ -34,5 +36,12 @@
 {
   [self showDiagnosis:50];
 }
+
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  self.title = @"Psychologist";
+}
+
 
 @end
