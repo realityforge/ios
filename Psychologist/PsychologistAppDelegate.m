@@ -17,8 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  self.navigator = [[UINavigationController alloc] init];
-  
+  UINavigationController *controller = [[UINavigationController alloc] init];
+  self.navigator = controller;
+  [controller release];
+
   PsychologistViewController *psychController = [[PsychologistViewController alloc] init];
   
   [self.navigator pushViewController:psychController animated:NO];
@@ -32,7 +34,7 @@
 
 - (void)dealloc
 {
-  self.navigator = nil;
+  [self.navigator release];
   [_window release];
   [super dealloc];
 }

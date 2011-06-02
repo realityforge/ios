@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PsychologistAppDelegate : NSObject <UIApplicationDelegate> {
+@interface PsychologistAppDelegate : NSObject <UIApplicationDelegate>
+{
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (retain) UINavigationController *navigator;
+@property(nonatomic, retain) IBOutlet UIWindow *window;
+@property(retain) UINavigationController *navigator;
 
 @end
