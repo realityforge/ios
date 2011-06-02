@@ -14,13 +14,13 @@
   // 0 (sad) to 100 (happy)
   int happiness;   
   
-  UISlider *slider;
-  FaceView *faceView;
+  UISlider *_slider;
+  FaceView *_faceView;
   
 }
 
-@property (retain) IBOutlet UISlider *slider;
-@property (retain) IBOutlet FaceView *faceView;
+@property (retain, nonatomic) IBOutlet UISlider *slider;
+@property (retain, nonatomic) IBOutlet FaceView *faceView;
 
 @property (nonatomic) int happiness;
 
