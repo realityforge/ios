@@ -284,6 +284,7 @@
 				D0A5AED21388ABE300D8E049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
