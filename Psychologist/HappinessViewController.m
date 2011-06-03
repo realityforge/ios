@@ -30,7 +30,7 @@
 
 - (IBAction)happinessChanged:(UISlider *)ignored
 {
-  self.happiness = (int) ([slider value] * 100);
+  self.happiness = (int) ([self.slider value] * 100);
 }
 
 - (float)smileForFaceView:(FaceView *)requestor
