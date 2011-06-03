@@ -51,6 +51,10 @@
 {
   [super viewDidLoad];
   self.faceView.delegate = self;
+  UIGestureRecognizer *pinchRecognizer =
+      [[UIPinchGestureRecognizer alloc] initWithTarget:self.faceView action:@selector(pinch:)];
+  [self.faceView addGestureRecognizer:pinchRecognizer];
+  [pinchRecognizer release];
   [self updateUIForHappinessChange];
 }
 

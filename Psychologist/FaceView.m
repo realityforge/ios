@@ -35,6 +35,16 @@
   return ([FaceView isValidScale:_scale]) ? _scale : DEFAULT_SCALE;
 }
 
+- (void)pinch:(UIPinchGestureRecognizer *)gesture
+{
+  if (UIGestureRecognizerStateChanged == gesture.state ||
+      UIGestureRecognizerStateEnded == gesture.state)
+  {
+    self.scale *= gesture.scale;
+    // This is needed so that scale is reset between calls of this method
+    gesture.scale = 1;
+  }
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
