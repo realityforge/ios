@@ -17,12 +17,14 @@
 
 @end
 
-@interface FaceView : UIView {
-    
-  id <FaceViewDelegate> delegate;
-  
+@interface FaceView : UIView
+{
+  id <FaceViewDelegate> _delegate;
+  CGFloat _scale;
 }
 
-@property (assign) id <FaceViewDelegate> delegate;
+@property CGFloat scale;
+
+@property(assign) id <FaceViewDelegate> delegate;
 
 @end
