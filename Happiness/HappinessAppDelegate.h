@@ -10,12 +10,13 @@
 
 @class HappinessViewController;
 
-@interface HappinessAppDelegate : NSObject <UIApplicationDelegate> {
+@interface HappinessAppDelegate : NSObject <UIApplicationDelegate>
+{
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property(nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet HappinessViewController *viewController;
+@property(nonatomic, retain) IBOutlet HappinessViewController *viewController;
 
 @end

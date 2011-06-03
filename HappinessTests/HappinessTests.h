@@ -9,9 +9,10 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 
-@interface HappinessTests : SenTestCase {
+@interface HappinessTests : SenTestCase
+{
 @private
-    
+
 }
 
 @end

@@ -17,12 +17,11 @@
 
 @end
 
-@interface FaceView : UIView {
-    
+@interface FaceView : UIView
+{
   id <FaceViewDelegate> delegate;
-  
 }
 
-@property (assign) id <FaceViewDelegate> delegate;
+@property(assign) id <FaceViewDelegate> delegate;
 
 @end

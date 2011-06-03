@@ -13,24 +13,24 @@
 @implementation HappinessAppDelegate
 
 
-@synthesize window=_window;
+@synthesize window = _window;
 
-@synthesize viewController=_viewController;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Override point for customization after application launch.
-   
+
   self.window.rootViewController = self.viewController;
   [self.window makeKeyAndVisible];
-    return YES;
+  return YES;
 }
 
 - (void)dealloc
 {
   [_window release];
   [_viewController release];
-    [super dealloc];
+  [super dealloc];
 }
 
 @end

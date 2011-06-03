@@ -9,21 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "FaceView.h"
 
-@interface HappinessViewController : UIViewController <FaceViewDelegate> {
-  
+@interface HappinessViewController : UIViewController <FaceViewDelegate>
+{
   // 0 (sad) to 100 (happy)
-  int happiness;   
-  
+  int happiness;
+
   UISlider *slider;
   FaceView *faceView;
-  
 }
 
-@property (retain) IBOutlet UISlider *slider;
-@property (retain) IBOutlet FaceView *faceView;
+@property(retain) IBOutlet UISlider *slider;
+@property(retain) IBOutlet FaceView *faceView;
 
-@property (nonatomic) int happiness;
+@property(nonatomic) int happiness;
 
--(IBAction) happinessChanged:(UISlider *)ignored;
+- (IBAction)happinessChanged:(UISlider *)ignored;
 
 @end
