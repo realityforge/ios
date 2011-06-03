@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HappinessViewController.h"
 
-
-@interface PsychologistViewController : UIViewController {
-    
+@interface PsychologistViewController : UIViewController
+{
+  HappinessViewController *_happinessViewController;
 }
 
+@property(readonly, nonatomic) HappinessViewController *happinessViewController;
+
 - (IBAction)happy;
+
 - (IBAction)sad;
+
 - (IBAction)soso;
 
 

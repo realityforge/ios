@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05EAFE31398C19F0061217C /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05EAFE11398C19F0061217C /* MainWindow-iPad.xib */; };
 		D0A5AEBA1388ABE300D8E049 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5AEB91388ABE300D8E049 /* UIKit.framework */; };
 		D0A5AEBC1388ABE300D8E049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5AEBB1388ABE300D8E049 /* Foundation.framework */; };
 		D0A5AEBE1388ABE300D8E049 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5AEBD1388ABE300D8E049 /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D05EAFE21398C19F0061217C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		D0A5AEB51388ABE300D8E049 /* Psychologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A5AEB91388ABE300D8E049 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0A5AEBB1388ABE300D8E049 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D05EAFE01398C19E0061217C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				D05EAFE11398C19F0061217C /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		D0A5AEAA1388ABE300D8E049 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		D0A5AEBF1388ABE300D8E049 /* Psychologist */ = {
 			isa = PBXGroup;
 			children = (
+				D05EAFE01398C19E0061217C /* iPad */,
 				D0A5AED31388ACB500D8E049 /* FaceView.h */,
 				D0A5AED61388ACCC00D8E049 /* HappinessViewController.h */,
 				D0A5AED71388ACCC00D8E049 /* HappinessViewController.m */,
@@ -165,6 +176,7 @@
 				D0A5AECD1388ABE300D8E049 /* MainWindow.xib in Resources */,
 				D0A5AEDA1388ACD600D8E049 /* HappinessViewController.xib in Resources */,
 				D0A5AEDF1388ADCA00D8E049 /* PsychologistViewController.xib in Resources */,
+				D05EAFE31398C19F0061217C /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +198,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D05EAFE11398C19F0061217C /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05EAFE21398C19F0061217C /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
 		D0A5AEC21388ABE300D8E049 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -246,7 +266,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Psychologist/Psychologist-Prefix.pch";
 				INFOPLIST_FILE = "Psychologist/Psychologist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -259,7 +281,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Psychologist/Psychologist-Prefix.pch";
 				INFOPLIST_FILE = "Psychologist/Psychologist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

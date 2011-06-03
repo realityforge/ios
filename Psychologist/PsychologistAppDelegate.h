@@ -15,5 +15,6 @@
 
 @property(nonatomic, retain) IBOutlet UIWindow *window;
 @property(retain) UINavigationController *navigator;
+@property(readonly) BOOL iPad;
 
 @end

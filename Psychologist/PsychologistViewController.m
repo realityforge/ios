@@ -7,19 +7,28 @@
 //
 
 #import "PsychologistViewController.h"
-#import "HappinessViewController.h"
-
 
 @implementation PsychologistViewController
 
 - (void)showDiagnosis:(int)happinessLevel
 {
-  HappinessViewController* controller = [[HappinessViewController alloc] init];
-  controller.happiness = happinessLevel;
-  controller.title = @"Diagnosis";
+  _happinessViewController.happiness = happinessLevel;
+  _happinessViewController.title = @"Diagnosis";
 
-  [self.navigationController pushViewController:controller animated:YES];
-  [controller release];
+  // If the happiness controller is not on screen then put it there (otherwise we are on the iPad)
+  if (nil == self.happinessViewController.view.window)
+  {
+    [self.navigationController pushViewController:self.happinessViewController animated:YES];
+  }
+}
+
+- (HappinessViewController *)happinessViewController
+{
+  if (!_happinessViewController)
+  {
+    _happinessViewController = [[HappinessViewController alloc] init];
+  }
+  return _happinessViewController;
 }
 
 - (IBAction)happy
@@ -48,5 +57,10 @@
   return YES;
 }
 
+- (void)dealloc
+{
+  [_happinessViewController release];
+  [super dealloc];
+}
 
 @end

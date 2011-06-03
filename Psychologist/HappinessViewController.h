@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FaceView.h"
 
-@interface HappinessViewController : UIViewController <FaceViewDelegate>
+@interface HappinessViewController : UIViewController <FaceViewDelegate, UISplitViewControllerDelegate>
 {
 
   // 0 (sad) to 100 (happy)
